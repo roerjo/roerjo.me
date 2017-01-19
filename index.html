@@ -10,7 +10,16 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
 
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-
+    <script type="text/javascript">
+        function showMenu() {
+            var x = document.getElementById("navbar");
+            if (x.className === "") {
+                x.className += "clicked";
+            } else {
+                x.className = "";
+            }
+        }
+    </script>
 </head>
 <body>
 
@@ -18,16 +27,19 @@
 		<div class="container">
 			<a href="index.html"><h1>RoErJo</h1></a>
 			<nav>
-				<ul>
+				<ul class="" id="navbar">
+                    <li class="icon"><a href="javascript:void(0);" onclick="showMenu()">&#9776;</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#work">Projects</a></li>
 					<li><a href="#moreAbout">Learn More</a></li>
+                    
 				</ul>
 			</nav>
 		</div>			
 	</header>
 
 	<div class="intro" id="intro">
+        <h2>Web. Data. Penguins.</h2>
 	</div>
 	
 	<section class="about" id="about">
