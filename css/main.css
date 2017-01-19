@@ -56,7 +56,7 @@ header {
       color: white; }
     header #responsive li:hover {
       background-color: #f2f2f2;
-      color: #fff;
+      color: #000;
       border-radius: 0;
       border: none;
       transition: 0.3s; }
