@@ -12,11 +12,11 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
     <script type="text/javascript">
         function showMenu() {
-            var x = document.getElementById("navbar");
-            if (x.className === "") {
-                x.className += "clicked";
+            var x = document.getElementById("responsive");
+            if (x.style.display != "block") {
+                x.style.display = "block";
             } else {
-                x.className = "";
+                x.style.display = "none";
             }
         }
     </script>
@@ -28,13 +28,17 @@
 			<a href="index.html"><h1>RoErJo</h1></a>
 			<nav>
 				<ul class="" id="navbar">
-                    <li class="icon"><a href="javascript:void(0);" onclick="showMenu()">&#9776;</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#work">Projects</a></li>
 					<li><a href="#moreAbout">Learn More</a></li>
-                    
+                    <li class="icon"><a href="javascript:void(0);" onclick="showMenu()">&#9776;</a></li>
 				</ul>
 			</nav>
+            <ul class="hiddenNav" id="responsive">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Projects</a></li>
+                    <li><a href="#moreAbout">Learn More</a></li>
+            </ul>
 		</div>			
 	</header>
 

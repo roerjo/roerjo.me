@@ -37,23 +37,35 @@ header {
       color: #fff;
       text-decoration: none;
       padding: 8px 15px; }
-    header nav a:hover,
-    header nav a:focus {
+    header nav a:hover {
       background-color: #FAB31E;
       color: #fff;
       border-radius: 0;
       border: none; }
+  header #responsive {
+    display: none;
+    clear: both;
+    text-align: center;
+    margin: 0;
+    padding: 0; }
+    header #responsive li {
+      list-style: none;
+      padding: 10px 0; }
+    header #responsive li a {
+      text-decoration: none;
+      color: white; }
+    header #responsive li:hover {
+      background-color: #FAB31E;
+      color: #fff;
+      border-radius: 0;
+      border: none;
+      transition: 0.3s; }
 
 @media screen and (max-width: 460px) {
   header nav li {
     display: none; }
   header nav .icon {
     display: inline-block; } }
-@media screen and (max-width: 460px) {
-  header nav .clicked li {
-    display: inline; }
-  header nav .clicked li a {
-    display: block; } }
 /*---------- Jumbotron ----------*/
 .intro {
   background: url("../img/index/home.jpg") center center no-repeat;

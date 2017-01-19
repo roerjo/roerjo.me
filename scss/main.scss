@@ -52,14 +52,36 @@ header {
 			text-decoration: none;
 			padding: 8px 15px;
 		}
-		a:hover,
-		a:focus {
+		a:hover {
 			background-color: #FAB31E;
 			color: $linkTextColor;
 			border-radius: 0;
 			border: none;
 		}
 	}
+	#responsive {
+		display: none;
+		clear: both;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		li {
+			list-style: none;
+			padding: 10px 0;
+		}
+		li a {
+			text-decoration: none;
+			color: white;
+		}
+		li:hover {
+			background-color: #FAB31E;
+			color: $linkTextColor;
+			border-radius: 0;
+			border: none;
+			transition: 0.3s;
+		}
+	}
+
 }
 
 
@@ -79,15 +101,9 @@ header {
 
 @media screen and (max-width: 460px) {
 	header {
-		nav {
-			.clicked li {
-				display: inline;
 
-			}
-			.clicked li a {
-				display: block;
-			}
-		}
+
+
 	}
 }
 
