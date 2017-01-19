@@ -44,12 +44,12 @@ header {
       border-radius: 0;
       border: none; }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 460px) {
   header nav li {
     display: none; }
   header nav .icon {
     display: inline-block; } }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 460px) {
   header nav .clicked li {
     display: inline; }
   header nav .clicked li a {
@@ -72,10 +72,10 @@ header {
     height: 450px; }
     .intro h2 {
       padding-top: 75px; } }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 460px) {
   .intro {
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     justify-content: center;
     height: 300px; }
     .intro h2 {
