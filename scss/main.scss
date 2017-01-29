@@ -151,6 +151,7 @@ header {
 	.container {
 		display: flex;		
 		justify-content: space-between;
+		max-height: 355px;
 	}
 	h2 {
 		font-size: 36px;

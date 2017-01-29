@@ -96,7 +96,8 @@ header {
 /*---------- About ----------*/
 .about .container {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  max-height: 355px; }
 .about h2 {
   font-size: 36px;
   margin: 50px 15px 25px 15px; }
