@@ -108,6 +108,7 @@ header {
   align-items: center;
   flex-wrap: wrap; }
 .about img {
+  max-height: 355px;
   margin: 30px;
   width: 30%;
   border-radius: 100%; }
@@ -115,7 +116,8 @@ header {
 @media screen and (max-width: 900px) {
   .about .container {
     flex-wrap: wrap-reverse;
-    justify-content: center; }
+    justify-content: center;
+    max-height: 100%; }
   .about .text {
     width: 100%; }
   .about img {
