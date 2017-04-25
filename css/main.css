@@ -142,7 +142,8 @@ header {
     text-align: center;
     overflow: auto;
     border: 5px solid #1E2C51;
-    border-radius: 5px; }
+    border-radius: 5px;
+    height: 400px; }
   .work img {
     height: 150px;
     width: 100%; }
