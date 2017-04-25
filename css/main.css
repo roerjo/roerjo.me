@@ -9,7 +9,6 @@ body {
 
 h2, h3 {
   text-align: center;
-  text-decoration: underline;
   text-transform: uppercase; }
 
 /*---------- Header/Nav ----------*/
@@ -147,10 +146,6 @@ header {
     text-align: center;
     border: none;
     overflow: auto; }
-  .work img {
-    height: 100%;
-    width: 100%;
-    background-color: white; }
   .work h3 {
     color: #fff;
     font-size: 100%;

@@ -17,7 +17,6 @@ body {
 
 h2, h3 {
 	text-align: center;
-	text-decoration: underline;
 	text-transform: uppercase;
 }
 
@@ -217,13 +216,8 @@ header {
 	.thumbnail {
 		background-color: #1E2C51;
 		text-align: center;
-		border: none;
+    	border: none;
 		overflow: auto;
-	}
-	img {
-		height: 100%;
-		width: 100%;
-		background-color: white;
 	}
 	h3 {
 		color: $lightHeadingColor;
