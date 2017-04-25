@@ -143,11 +143,18 @@ header {
     overflow: auto;
     border: 5px solid #1E2C51;
     border-radius: 5px; }
-  .work a {
-    text-decoration: none; }
+  .work img {
+    height: 150px;
+    width: 100%; }
   .work h3 {
     font-size: 100%;
     font-weight: 700; }
+  .work .btn {
+    background-color: #FAB31E;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 3px;
+    text-decoration: none; }
 
 @media only screen and (max-width: 768px) {
   .work .container {

@@ -214,12 +214,20 @@ header {
 		border: 5px solid #1E2C51;
 		border-radius: 5px;
 	}
-	a {
-		text-decoration: none;
+	img {
+		height: 150px;
+		width: 100%;
 	}
 	h3 {
 		font-size: 100%;
 		font-weight: 700;
+	}
+	.btn {
+		background-color: #FAB31E;
+		color: $linkTextColor;
+		padding: 8px 15px;
+		border-radius: 3px;
+		text-decoration: none;
 	}
 }
 
