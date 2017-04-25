@@ -136,16 +136,17 @@ header {
     justify-content: space-between;
     padding: 0 15px; }
   .work .projects {
-    width: 30%;
-    border: 5px solid #1E2C51;
-    border-radius: 5px; }
+    width: 30%; }
   .work a {
     text-decoration: none; }
   .work .thumbnail {
+    color: #fff;
     background-color: #1E2C51;
     text-align: center;
     border: none;
-    overflow: auto; }
+    overflow: auto;
+    border: 5px solid #1E2C51;
+    border-radius: 5px; }
   .work h3 {
     color: #fff;
     font-size: 100%;
