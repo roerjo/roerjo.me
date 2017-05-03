@@ -22,7 +22,7 @@ the Dropbox developer area, <a href="https://www.dropbox.com/developers">Dropbox
 , and if you don't already have an account go ahead and create a new one.
 </p>
 
-![Alt_text](/img/dropbox/dropboxdevmain.png)
+![Alt_text](../../../img/dropbox/dropboxdevmain.png)
 
 <p>
 Click on 'My apps' in the upper left and select the 'Create app' button. You will
@@ -31,7 +31,7 @@ then be asked to fill out some options. I don't know anything about Dropbox Busi
 access your app will need, preferably just to one folder, and then select a name.
 </p>
 
-![Alt_text](/img/dropbox/dropboxappoptions.png)
+![Alt_text](../../../img/dropbox/dropboxappoptions.png)
 
 <p>
 The next page you see will contain settings for your Dropbox app. The app key is 
@@ -39,7 +39,7 @@ what we are most interested in at this point, so copy that and have it ready to
 paste into our Android app.
 </p>
 
-![Alt_text](/img/dropbox/dropboxsettings.png)
+![Alt_text](../../../img/dropbox/dropboxsettings.png)
 
 <h2>Android Setup</h2>
 
