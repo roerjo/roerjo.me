@@ -48,13 +48,13 @@ Let's create a new project in Android Studio. I'm leaving the defaults as they a
 for this first section; you can adjust as needed. 
 </p>
 
-![Alt_text](/img/dropbox/newproject.png)
+![Alt_text](../../../img/dropbox/newproject.png)
 
 <p>
 I want this to be able to run back on JellyBean devices so I selected API 17.
 </p>
 
-![Alt_text](/img/dropbox/apiselect.png)
+![Alt_text](../../../img/dropbox/apiselect.png)
 
 <p>
 I'm selecting a Login Activity, because we want to have the user sign in to Dropbox
@@ -62,7 +62,7 @@ when entering the app, so that we can upload/download the JSON file without havi
 to ask for permission later on.
 </p>
 
-![Alt_text](/img/dropbox/selectactivity.png)
+![Alt_text](../../../img/dropbox/selectactivity.png)
 
 <h2>Let's Do Some Code</h2>
 
@@ -345,7 +345,7 @@ should get something similiar after you have logged in and authorized the app
 to access the directory created on Dropbox.
 </p>
 
-![Alt_text](/img/dropbox/mainscreen.png)
+![Alt_text](../../../img/dropbox/mainscreen.png)
 
 
 <h3>Dropbox Client</h3>
@@ -675,13 +675,13 @@ Then, go to Dropbox and verify that you file was uploaded. From your Dropbox hom
 directory it should be in App/{youAppName}. Success?
 </p>
 
-![Alt_text](/img/dropbox/dropboxappfolder.png)
+![Alt_text](../../../img/dropbox/dropboxappfolder.png)
 
 <p>
 If everything is working correctly, edit the date and save the file on the Dropbox.
 </p>
 
-![Alt_text](/img/dropbox/dropboxjson.png)
+![Alt_text](../../../img/dropbox/dropboxjson.png)
 
 <p>
 Back in your app, hit the download button and then navigate to where the file is 
