@@ -1,55 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1">
-    <title>RoErJo | Upload/Download A File With Dropbox in an Android App</title>
-
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,100%7CRoboto:400,700,300,100' rel='stylesheet' type='text/css'>
-
-    <link rel="stylesheet" type="text/css" href="../../../css/normalize.css">
-
-    <link rel="stylesheet" type="text/css" href="../../../css/post.css">
-    <script type="text/javascript">
-        function showMenu() {
-            var x = document.getElementById("responsive");
-            if (x.style.display != "block") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }
-    </script>
-</head>
-<body>
-
-    <header class="head">
-        <div class="container">
-            <a href="/"><h1>RoErJo</h1></a>
-            <nav>
-                <ul class="" id="navbar">
-                    <li><a href="/#about">About</a></li>
-                    <li><a href="/#work">Projects</a></li>
-                    <li><a href="/#moreAbout">Learn More</a></li>
-                    <li class="icon"><a href="javascript:void(0);" onclick="showMenu()">&#9776;</a></li>
-                </ul>
-            </nav>
-            <ul class="hiddenNav" id="responsive">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#work">Projects</a></li>
-                    <li><a href="#moreAbout">Learn More</a></li>
-            </ul>
-        </div>          
-    </header>
-	
-	<div class="container">
-		<article>
-    		<div class="postHead">
-				<h1>Upload/Download A File With Dropbox in an Android App</h1>
-				<p class="meta">09 Apr 2017</p>
-			</div>
-			<div class="post">
-			  <h2>Background</h2>
+---
+layout: post
+title: "Upload/Download A File With Dropbox in an Android App"
+date: 2017-05-04
+---
+<h2>Background</h2>
 
 <p>
 I was recently working on an Android app that would be using Dropbox to sync
@@ -68,7 +22,7 @@ the Dropbox developer area, <a href="https://www.dropbox.com/developers">Dropbox
 , and if you don't already have an account go ahead and create a new one.
 </p>
 
-<p><img src="/img/dropbox/dropboxdevmain.png" alt="Alt_text" /></p>
+![Alt_text](../../../img/dropbox/dropboxdevmain.png)
 
 <p>
 Click on 'My apps' in the upper left and select the 'Create app' button. You will
@@ -77,7 +31,7 @@ then be asked to fill out some options. I don't know anything about Dropbox Busi
 access your app will need, preferably just to one folder, and then select a name.
 </p>
 
-<p><img src="/img/dropbox/dropboxappoptions.png" alt="Alt_text" /></p>
+![Alt_text](../../../img/dropbox/dropboxappoptions.png)
 
 <p>
 The next page you see will contain settings for your Dropbox app. The app key is 
@@ -85,7 +39,7 @@ what we are most interested in at this point, so copy that and have it ready to
 paste into our Android app.
 </p>
 
-<p><img src="/img/dropbox/dropboxsettings.png" alt="Alt_text" /></p>
+![Alt_text](../../../img/dropbox/dropboxsettings.png)
 
 <h2>Android Setup</h2>
 
@@ -94,13 +48,13 @@ Let's create a new project in Android Studio. I'm leaving the defaults as they a
 for this first section; you can adjust as needed. 
 </p>
 
-<p><img src="/img/dropbox/newproject.png" alt="Alt_text" /></p>
+![Alt_text](/img/dropbox/newproject.png)
 
 <p>
 I want this to be able to run back on JellyBean devices so I selected API 17.
 </p>
 
-<p><img src="/img/dropbox/apiselect.png" alt="Alt_text" /></p>
+![Alt_text](/img/dropbox/apiselect.png)
 
 <p>
 I'm selecting a Login Activity, because we want to have the user sign in to Dropbox
@@ -108,7 +62,7 @@ when entering the app, so that we can upload/download the JSON file without havi
 to ask for permission later on.
 </p>
 
-<p><img src="/img/dropbox/selectactivity.png" alt="Alt_text" /></p>
+![Alt_text](/img/dropbox/selectactivity.png)
 
 <h2>Let's Do Some Code</h2>
 
@@ -128,9 +82,9 @@ dependencies {
 </code>
 </pre>
 
-<p>Next we will want to add some package options to avoid a conflict at build time.
+Next we will want to add some package options to avoid a conflict at build time.
 Check out this <a href="http://stackoverflow.com/questions/31912459/duplicate-lib-file-copied-in-apk-meta-inf-license-txt-error-in-android-studio#31912566">Stackoverflow answer</a>
-for more info on that. Add the following lines in the android section:</p>
+for more info on that. Add the following lines in the android section:
 
 <pre>
 <code>
@@ -175,15 +129,15 @@ manifest file.
 &lt;activity
     android:name="com.dropbox.core.android.AuthActivity"
     android:configChanges="orientation|keyboard"
-    android:launchMode="singleTask"&gt;
-    &lt;intent-filter&gt;
-        &lt;!-- Insert your app key after “db-  ...” --&gt;
-        &lt;data android:scheme="db-APP_KEY" /&gt;
-        &lt;action android:name="android.intent.action.VIEW" /&gt;
-        &lt;category android:name="android.intent.category.BROWSABLE" /&gt;
-        &lt;category android:name="android.intent.category.DEFAULT" /&gt;
-    &lt;/intent-filter&gt;
-&lt;/activity&gt;
+    android:launchMode="singleTask">
+    &lt;intent-filter>
+        &lt;!-- Insert your app key after “db-  ...” -->
+        &lt;data android:scheme="db-APP_KEY" />
+        &lt;action android:name="android.intent.action.VIEW" />
+        &lt;category android:name="android.intent.category.BROWSABLE" />
+        &lt;category android:name="android.intent.category.DEFAULT" />
+    &lt;/intent-filter>
+&lt;/activity>
 </code>
 </pre>
 
@@ -193,13 +147,13 @@ Your manifest file should look something like this when you are done.
 
 <pre>
 <code>
-&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;?xml version="1.0" encoding="utf-8"?>
 &lt;manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.myapplication"&gt;
+    package="com.example.myapplication">
 
-    &lt;uses-permission android:name="android.permission.INTERNET" /&gt;
-    &lt;uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /&gt;
-    &lt;uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /&gt;
+    &lt;uses-permission android:name="android.permission.INTERNET" />
+    &lt;uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    &lt;uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     &lt;application
         android:allowBackup="true"
@@ -207,35 +161,35 @@ Your manifest file should look something like this when you are done.
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"&gt;
+        android:theme="@style/AppTheme">
         &lt;activity
             android:name=".LoginActivity"
-            android:label="@string/app_name"&gt;
-            &lt;intent-filter&gt;
-                &lt;action android:name="android.intent.action.MAIN" /&gt;
+            android:label="@string/app_name">
+            &lt;intent-filter>
+                &lt;action android:name="android.intent.action.MAIN" />
 
-                &lt;category android:name="android.intent.category.LAUNCHER" /&gt;
-            &lt;/intent-filter&gt;
-        &lt;/activity&gt;
+                &lt;category android:name="android.intent.category.LAUNCHER" />
+            &lt;/intent-filter>
+        &lt;/activity>
         &lt;activity
             android:name="com.dropbox.core.android.AuthActivity"
             android:configChanges="orientation|keyboard"
-            android:launchMode="singleTask"&gt;
-            &lt;intent-filter&gt;
+            android:launchMode="singleTask">
+            &lt;intent-filter>
 
-                &lt;!-- Insert your app key after “db-  ...” --&gt;
-                &lt;data android:scheme="db-APP KEY GOES HERE" /&gt;
+                &lt;!-- Insert your app key after “db-  ...” -->
+                &lt;data android:scheme="db-APP KEY GOES HERE" />
 
-                &lt;action android:name="android.intent.action.VIEW" /&gt;
+                &lt;action android:name="android.intent.action.VIEW" />
 
-                &lt;category android:name="android.intent.category.BROWSABLE" /&gt;
-                &lt;category android:name="android.intent.category.DEFAULT" /&gt;
-            &lt;/intent-filter&gt;
-        &lt;/activity&gt;
-        &lt;activity android:name=".MainActivity"&gt;&lt;/activity&gt;
-    &lt;/application&gt;
+                &lt;category android:name="android.intent.category.BROWSABLE" />
+                &lt;category android:name="android.intent.category.DEFAULT" />
+            &lt;/intent-filter>
+        &lt;/activity>
+        &lt;activity android:name=".MainActivity"></activity>
+    &lt;/application>
 
-&lt;/manifest&gt;
+&lt;/manifest>
 </code>
 </pre>
 
@@ -248,7 +202,7 @@ file is a good place to stick that. Add in the following line in that file:
 
 <pre>
 <code>
-&lt;string name="APP_KEY"&gt;{insert your app key here}&lt;/string&gt;
+&lt;string name="APP_KEY">{insert your app key here}&lt;/string>
 </code>
 </pre>
 
@@ -327,8 +281,8 @@ be sure to replace the context attribute with your specific package name.
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.myapplication.LoginActivity"&gt;
-    &lt;!-- Update package name --&gt;
+    tools:context="com.example.myapplication.LoginActivity">
+    &lt;!-- Update package name -->
 
     &lt;Button
         android:id="@+id/sign_in_button"
@@ -336,8 +290,8 @@ be sure to replace the context attribute with your specific package name.
         android:layout_height="wrap_content"
         android:text="Sign In"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" /&gt;
-&lt;/RelativeLayout&gt;
+        android:layout_centerHorizontal="true" />
+&lt;/RelativeLayout>
 </code>
 </pre>
 
@@ -355,13 +309,13 @@ is a layout if you don't won't to make your own:
 
 <pre>
 <code>
-&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;?xml version="1.0" encoding="utf-8"?>
 &lt;RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_centerHorizontal="true"
-    tools:context="com.example.myapplication.MainActivity"&gt;
+    tools:context="com.example.myapplication.MainActivity">
 
     &lt;Button
         android:id="@+id/download"
@@ -370,7 +324,7 @@ is a layout if you don't won't to make your own:
         android:layout_width="wrap_content"
         android:layout_above="@+id/upload"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="100dp" /&gt;
+        android:layout_marginBottom="100dp" />
 
     &lt;Button
         android:id="@+id/upload"
@@ -379,9 +333,9 @@ is a layout if you don't won't to make your own:
         android:layout_width="wrap_content"
         android:layout_marginBottom="202dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" /&gt;
+        android:layout_centerHorizontal="true" />
 
-&lt;/RelativeLayout&gt;
+&lt;/RelativeLayout>
 </code>
 </pre>
 
@@ -391,7 +345,8 @@ should get something similiar after you have logged in and authorized the app
 to access the directory created on Dropbox.
 </p>
 
-<p><img src="/img/dropbox/mainscreen.png" alt="Alt_text" /></p>
+![Alt_text](/img/dropbox/mainscreen.png)
+
 
 <h3>Dropbox Client</h3>
 
@@ -508,7 +463,7 @@ import java.io.OutputStream;
 import java.io.FileOutputStream;
 
 
-public class DownloadTask extends AsyncTask&lt;FileMetadata, Void, File&gt; {
+public class DownloadTask extends AsyncTask&lt;FileMetadata, Void, File> {
 
     private DbxClientV2 dbxClient;
     private Context context;
@@ -720,13 +675,13 @@ Then, go to Dropbox and verify that you file was uploaded. From your Dropbox hom
 directory it should be in App/{youAppName}. Success?
 </p>
 
-<p><img src="/img/dropbox/dropboxappfolder.png" alt="Alt_text" /></p>
+![Alt_text](/img/dropbox/dropboxappfolder.png)
 
 <p>
 If everything is working correctly, edit the date and save the file on the Dropbox.
 </p>
 
-<p><img src="/img/dropbox/dropboxjson.png" alt="Alt_text" /></p>
+![Alt_text](/img/dropbox/dropboxjson.png)
 
 <p>
 Back in your app, hit the download button and then navigate to where the file is 
@@ -736,26 +691,3 @@ stored, open it up and verify the date changed.
 <p>
 I hope this tutorial was a help to you!
 </p>
-
-			</div>
-		</article>
-	</div>
-
-	<footer class="footer" id="footer">
-	  	<div class="container">
-	    	<p>&copy; 2017 RoErJo</p>
-	  	</div>
-	</footer>
-
-</body>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-90488436-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-</html>
