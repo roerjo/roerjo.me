@@ -2,6 +2,7 @@
 layout: post
 title: "Upload/Download A File With Dropbox in an Android App"
 date: 2017-05-04
+comments: true
 ---
 <h2>Background</h2>
 
@@ -691,3 +692,5 @@ stored, open it up and verify the date changed.
 <p>
 I hope this tutorial was a help to you!
 </p>
+
+{% include disqus.html %}
