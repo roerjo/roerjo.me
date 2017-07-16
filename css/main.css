@@ -145,7 +145,7 @@ header #responsive li:hover {
 .about .container {
   display: flex;
   justify-content: space-between;
-  max-height: 355px;
+  max-height: 500px;
 }
 
 .about h2 {
