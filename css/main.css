@@ -145,7 +145,7 @@ header #responsive li:hover {
 .about .container {
   display: flex;
   justify-content: space-between;
-  max-height: 500px;
+  max-height: 700px;
 }
 
 .about h2 {
@@ -162,9 +162,11 @@ header #responsive li:hover {
 }
 
 .about img {
+  position: relative;
+  top: 70px;
   max-height: 355px;
   margin: 30px;
-  width: 30%;
+  width: 40%;
   border-radius: 100%;
 }
 
@@ -317,6 +319,16 @@ header #responsive li:hover {
   width: 49%;
   color: white;
   text-align: center; 
+}
+
+.moreAbout .codeLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.codeLinks a {
+  margin: 5px;
 }
 
 .moreAbout h3 {

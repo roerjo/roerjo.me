@@ -319,6 +319,16 @@ header #responsive li:hover {
   text-align: center; 
 }
 
+.moreAbout .codeLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.codeLinks a {
+  margin: 5px;
+}
+
 .moreAbout h3 {
   font-size: 18px; 
 }
