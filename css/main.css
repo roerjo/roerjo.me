@@ -3,14 +3,20 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto Slab'; 
+  background-color: #FFF;
 }
 
 .container {
   max-width: 980px;
   margin: 0 auto; 
+  height: 100%;
 }
 
-h2, h3 {
+.wrapper {
+  padding: 10px;
+}
+
+h1, h2, h3 {
   text-align: center;
   text-transform: uppercase;
 }
@@ -24,40 +30,41 @@ header {
   position: fixed;
   z-index: 1000;
   width: 100%; 
+  top: 0;
 }
 
-header h1 {
-  float: left;
-  color: #fff;
-  font-size: 28px;
-  margin-left: 15px;
+header #brand {
+    float: left;
+    color: #fff;
+    display: inline-block;
+    margin: 0;
+    line-height: 44px;
 }
 
-header nav {
+header .dNav {
   float: right;
-  margin-top: 10px;
   margin-right: 15px; 
 }
 
-header nav ul {
+header .dNav ul {
   list-style-type: none;
 }
 
-header nav li {
+header .dNav li {
   display: inline-block;
 }
 
-header nav .icon {
+header #mobileIcon {
   display: none; 
 }
 
-header nav a {
+header .dNav a {
   color: #fff;
   text-decoration: none;
   padding: 8px 15px;
 }
 
-header nav a:hover {
+header .dNav a:hover {
   background-color: #FAB31E;
   color: #fff;
   border-radius: 0;
@@ -91,97 +98,121 @@ header #responsive li:hover {
 }
 
 @media screen and (max-width: 460px) {
-  header nav li {
+  header .dNav li {
     display: none; }
-  header nav .icon {
+  header #mobileIcon {
     display: inline-block; } }
 
 
-/*---------- Jumbotron ----------*/
-
+/*---------- Intro ----------*/
 
 .intro {
-  background: url("../img/index/home.jpg") center center no-repeat;
-  background-size: contain;
-  background-color: #1E2C51;
-  height: 600px;
-  color: #fff; 
+    padding-top: 10px;
 }
 
-.intro h2 {
-  margin-top: -15px;
-  padding-top: 110px;
-  text-decoration: none;
-  font-size: 36px; 
+.intro .container {
+  background-color: #69bcf2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
 }
 
-@media screen and (max-width: 768px) {
-  .intro {
-    height: 450px; 
-  }
-
-  .intro h2 {
-    padding-top: 75px; 
-  }
-}
-
-@media screen and (max-width: 460px) {
-  .intro {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    height: 300px;
-  }
-  .intro h2 {
-    font-size: 25px;
-    margin-bottom: 10px; 
-  } 
-}
-
-
-/*---------- About ----------*/
-
-
-.about .container {
+.intro .wrapper {
   display: flex;
   justify-content: space-between;
   max-height: 700px;
 }
 
-.about h2 {
+.intro h1 {
   font-size: 36px;
   margin: 50px 15px 25px 15px; 
 }
 
-.about .text {
+.intro .text {
   width: 60%;
   margin: 15px;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
-.about img {
-  position: relative;
-  top: 70px;
+text h3 {
+  display: block;
+}
+
+.intro img {
+  display: inline-block;
   max-height: 355px;
-  margin: 30px;
+  margin: auto;
   width: 40%;
   border-radius: 100%;
 }
 
 @media screen and (max-width: 900px) {
-  .about .container {
+  .intro .wrapper {
     flex-wrap: wrap-reverse;
     justify-content: center;
     max-height: 100%; 
   }
 
-  .about .text {
+  .intro .text {
     width: 100%; 
   }
 
-  .about img {
+  .intro img {
+    width: 250px;
+    height: 250px;
+    margin: 30px 0; 
+  } 
+}
+
+
+/*---------- Looking For/Skills ----------*/
+   
+
+.tech .container {
+  background-color: #FFB552;
+  color: #fff; 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+
+.tech .wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-height: 700px;
+}
+
+.tech h2 {
+  font-size: 36px;
+  margin: 50px 15px 25px 15px; 
+}
+
+.tech .text {
+  width: 60%;
+  margin: 15px;
+}
+
+text h3 {
+  display: block;
+}
+
+.tech img {
+  display: inline-block;
+  max-height: 355px;
+  margin: auto;
+  width: 40%;
+  border-radius: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .tech .wrapper {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    max-height: 100%; 
+  }
+
+  .tech .text {
+    width: 100%; 
+  }
+
+  .tech img {
     width: 250px;
     height: 250px;
     margin: 30px 0; 
@@ -192,10 +223,11 @@ header #responsive li:hover {
 /*---------- My Work ----------*/
 
 
-.work {
-  background-color: #FAB31E;
-  padding-bottom: 30px;
-  overflow: auto; 
+.work .container {
+  background-color: #4DF094;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  padding-bottom: 15px; 
 }
 
 .work h2 {
@@ -203,10 +235,9 @@ header #responsive li:hover {
   margin: 50px 15px 45px 15px; 
 }
 
-.work .container {
+.work #project-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 0 15px; 
 }
 
 .projects {
@@ -271,7 +302,7 @@ header #responsive li:hover {
 }
 
 @media only screen and (max-width: 880px) {
-  .work .container {
+  .work .wrapper {
     flex-wrap: wrap;
     justify-content: space-around; 
   }
@@ -284,7 +315,7 @@ header #responsive li:hover {
 }
 
 @media only screen and (max-width: 460px) {
-  .work .container {
+  .work .wrapper {
     flex-wrap: wrap;
     justify-content: space-around; 
   }
@@ -298,26 +329,25 @@ header #responsive li:hover {
 /*---------- Learn More ----------*/
 
 
-.moreAbout {
-  background-color: #1E2C51;
-  padding-bottom: 25px;
-  overflow: auto; 
+.moreAbout .container {
+  background-color: #E6FE51;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  margin-bottom: 10px; 
 }
 
 .moreAbout h2 {
   font-size: 36px;
   margin: 50px 0 25px 0;
-  color: #fff; 
 }
 
-.moreAbout .container {
+.moreAbout .wrapper {
   display: flex;
   justify-content: space-between; 
 }
 
 .moreAbout .splitHalf {
   width: 49%;
-  color: white;
   text-align: center; 
 }
 
@@ -348,7 +378,7 @@ header #responsive li:hover {
     margin: 30px 0 10px 0; 
   }
 
-  .moreAbout .container {
+  .moreAbout .wrapper {
     flex-wrap: wrap; 
   }
 
