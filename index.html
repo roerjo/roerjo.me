@@ -10,95 +10,114 @@
         <title>RoErJo</title>
 
         <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,100%7CRoboto:400,700,300,100' rel='stylesheet' type='text/css'>
+        
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+       
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+       
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script> 
 
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
 
         <link rel="stylesheet" type="text/css" href="css/main.css">
 
         <script type="text/javascript">
-            function showMenu() {
-                var x = document.getElementById("responsive");
-                if (x.style.display !== "block") {
-                    x.style.display = "block";
-                } else {
-                    x.style.display = "none";
-                }
-            }
+
+            $(document).ready(function(){
+                $('.collapsible').collapsible();
+                $('.button-collapse').sideNav();
+            });
+
         </script>
 
     </head>
 
     <body>
 
-        <header>
-        
+        <nav class="black">
+
             <div class="container">
 
-                <h2 id="brand">Eric Johnson</h2>
+                <h1 class="brand-logo">Eric Johnson</h1>
+
+                <a href="#" data-activates="nav-mobile" class="button-collapse">&#9776</a>
       
-                <nav>
+                <ul class="right hide-on-med-and-down">
 
-                    <ul class="dNav">
+                    <li><a href="/#intro">About</a></li>
+                    <li><a href="/#tech">Skills</a></li>
+                    <li><a href="/#work">Experience</a></li>
+                    <li><a href="/#moreAbout">Learn More</a></li>
 
-                        <li><a href="/#intro">About</a></li>
-                        <li><a href="/#tech">Knowledge</a></li>
-                        <li><a href="/#work">Projects</a></li>
-                        <li><a href="/#moreAbout">Learn More</a></li>
-                        <li id="mobileIcon"><a href="#" onclick="showMenu()">&#9776;</a></li>
-
-                    </ul>
+                </ul>
                 
-                </nav>
+                <ul class="side-nav" id="nav-mobile">
 
-                <nav>
-                    
-                    <ul id="responsive">
+                    <li><a href="/#intro">About</a></li>
+                    <li><a href="/#tech">Skills</a></li>
+                    <li><a href="/#work">Experience</a></li>
+                    <li><a href="/#moreAbout">Learn More</a></li>
 
-                        <li><a href="/#intro">About</a></li>
-                        <li><a href="/#tech">Knowledge</a></li>
-                        <li><a href="/#work">Projects</a></li>
-                        <li><a href="/#moreAbout">Learn More</a></li>
-
-                    </ul>
-
-                </nav>
+                </ul>
 
             </div>          
 
-        </header>
+        </nav>
 
         <section class="intro" id="into">
 
             <div class="container">
         
-                <h1>Eric Johnson</h1>
+                <h2>About</h2>
               
                 <div class="wrapper">
 
                     <div class="text">
 
-                        <h3>Intro</h3>
+                        <div class="card">
 
-                        <p>Hello, my name is Eric. I studied Computer Systems Administration at Southern Adventist University. I like working in web development with open source tech, and while I feel that I am fullstack capable, I do prefer to work with backend code/dev ops stuff.</p>
-                     
-                        <h3>Personality</h3>
+                            <div class="card-content blue lighten-3">
 
-                        <p>I consider myself an easy going guy. I would be prefer to do an activity rather than sit around and talk (I'm kind of quiet). I enjoy learning new things, and feel that I learn best visually and through hands-on practice.</p>
+                                <p>
+                                Hello, my name is Eric. I studied Computer Systems 
+                                Administration at Southern Adventist University. I like 
+                                working in web development with open source tech, and 
+                                while I feel that I am fullstack capable, I do prefer to 
+                                work with backend code/dev ops stuff.
+                                </p>
+                             
+                                <br/>
 
-                        <h3>Hobbies</h3>
+                                <p>
+                                I consider myself an easy going guy. I would be prefer to 
+                                do an activity rather than sit around and talk (I'm kind 
+                                of quiet). I enjoy learning new things, and feel that I 
+                                learn best visually and through hands-on practice.
+                                </p>
 
-                        <ul>
+                                <br/>
 
-                            <li>Mountain Biking</li>
-                            <li>Watching/Playing sports</li>
-                            <li>Board/Card games</li>
-                            <li>Comedy TV shows</li>
+                                <p>
+                                In my free time, I enjoy mountain biking, watching/playing 
+                                sports, board/card games, and watching comedy TV shows.
+                                </p>
 
-                        </ul> 
+                            </div>
+
+                        </div>
                     
                     </div>
 
-                    <img src="img/index/me.jpg" alt="Eric Johnson">
+                    <div class="image-wrap">
+
+                        <img src="img/index/me.jpg" alt="Eric Johnson">
+
+                    </div>
 
                 </div>
 
@@ -110,53 +129,105 @@
             
             <div class="container">
         
-                <h2>Capabilities</h1>
+                <h2>Skills</h2>
               
                 <div class="wrapper">
                     
-                    <img src="img/index/code.png" alt="Sample code">
+                    <div class="image-wrap">
+
+                        <img src="img/index/code1.png" alt="Sample code">
+
+                    </div>
 
                     <div class="text">
 
-                        <h3>Enjoy Working With:</h3>
+                        <div class="row">
 
-                        <ul>
+                            <div class="col s12">
 
-                            <li>Laravel</li>
-                            <li>PHP</li>
-                            <li>Bash scripting</li>
-                            <li>Vim</li>
-                            <li>Vagrant</li>
-                            <li>Setting up dev environments</li>
-                            <li>SQL</li>
-                            <li>Linux</li>
+                                <div class="card orange lighten-2">
+
+                                    <div class="card-content">
+
+                                        <span class="card-title">Enjoy Working On</span>
+
+                                        <ul>
+
+                                            <li>Laravel</li>
+                                            <li>PHP</li>
+                                            <li>Bash scripting</li>
+                                            <li>Vim</li>
+                                            <li>Vagrant</li>
+                                            <li>Setting up dev environments</li>
+                                            <li>SQL</li>
+                                            <li>Linux</li>
+                                            
+                                        </ul>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
                             
-                        </ul>
+                        </div>
 
-                        <h3>Comfortable Working With:</h3>
+                        <div class="row">
 
-                        <ul>
+                            <div class="col s12">
 
-                            <li>JavaScript</li>
-                            <li>jQuery</li>
-                            <li>CSS</li>
-                            <li>Bootstrap</li>
-                            <li>MaterializeCSS</li>
-                            <li>HTML</li>
-                            <li>Git</li>
+                                <div class="card orange lighten-2">
 
-                        </ul>
+                                    <div class="card-content">
 
-                        <h3>Some Experience:</h3>
+                                        <span class="card-title">Comfortable Working With</span>
+                        
+                                        <ul>
 
-                        <ul>
+                                            <li>JavaScript</li>
+                                            <li>jQuery</li>
+                                            <li>CSS</li>
+                                            <li>Bootstrap</li>
+                                            <li>MaterializeCSS</li>
+                                            <li>HTML</li>
+                                            <li>Git</li>
 
-                            <li>AngularJS</li>
-                            <li>Python</li>
-                            <li>C++</li>
-                            <li>SCSS</li>
+                                        </ul>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
                             
-                        </ul>
+                        </div>
+                        
+                        <div class="row">
+
+                            <div class="col s12">
+
+                                <div class="card orange lighten-2">
+
+                                    <div class="card-content">
+
+                                        <span class="card-title">Some Experience With</span>
+                        
+                                        <ul>
+
+                                            <li>AngularJS</li>
+                                            <li>Python</li>
+                                            <li>C++</li>
+                                            <li>SCSS</li>
+                                            
+                                        </ul>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            
+                        </div>
                      
                     </div>
 
@@ -170,135 +241,233 @@
 
             <div class="container">
 
-                <h2>Work Experience and Projects</h2>
+                <h2>Experience</h2>
 
-                <h3>Work Experience</h3>
-                
                 <div class="wrapper">
+                
+                    <div class="card teal accent-2">
 
-                <h4>CIRC (Center for Innovation and Research in Computing) - Student Web Developer</h4>
-                <ul>
-                    
-                    <li>Created a backend API using Laravel and MySQL for ShareHim.org that consists of user managment routes, email verifications, presentation upload routes, and an admin web interface.</li>
+                        <div class="card-content">
 
-                    <li>Created PHP scripts and jQuery functions for Collegedale Academy to give them the ability to export students information from the legacy registration system to the PowerSchool CMS.</li>
+                            <span class="card-title">Work Experience</span>
 
-                    <li>Modified legacy PHP scripts to correctly parse CSV files and store information in a MySQL database for Southern Adventist University's prospective student registration program.</li>
+                            <div class="row">
 
-                    <li>Integrate table sorting capabilities into Dialogue Magazine's administrator interface via JavaScript libraries.</li>
+                                <div class="col s12">
 
-                </ul>
+                                    <ul class="collapsible">
 
-                <h4>McKee Foods Corporation - Software Engineering Intern</h4>
+                                        <li>
+                                            
+                                            <div class="collapsible-header">
+                                                
+                                                <i class="fa fa-angle-down"></i>
+                                                CIRC (Center for Innovation and Research in Computing) - Student Web Developer
+                                            
+                                            </div>
 
-                <ul>
+                                            <div class="collapsible-body white">
+                            
+                                                <p>
+                                                Created a backend API using Laravel and 
+                                                MySQL for ShareHim.org that consists of 
+                                                user managment routes, email verifications, 
+                                                presentation upload routes, and an admin 
+                                                web interface.
+                                                </p>
 
-                    <li>Design and build new business reports using SSMS and SSRS.</li>
+                                                <br/>
 
-                    <li>Make layout adjustments on internal mobile business applications using SCSS and some AngularJS.</li>
+                                                <p>
+                                                Created PHP scripts and jQuery functions 
+                                                for Collegedale Academy to give them the 
+                                                ability to export students information from 
+                                                the legacy registration system to the 
+                                                PowerSchool CMS.
+                                                </p>
 
-                </ul>
+                                                <br/>
+
+                                                <p>
+                                                Modified legacy PHP scripts to correctly 
+                                                parse CSV files and store information in 
+                                                a MySQL database for Southern Adventist 
+                                                University's prospective student registration 
+                                                program.
+                                                </p>
+
+                                                <br/>
+
+                                                <p>
+                                                Integrate table sorting capabilities into 
+                                                Dialogue Magazine's administrator interface 
+                                                via JavaScript libraries.
+                                                </p>
+
+                                            </div>
+                                        
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                                <div class="col s12">
+
+                                    <ul class="collapsible">
+
+                                        <li>
+                                            
+                                            <div class="collapsible-header">
+                                                
+                                                <i class="fa fa-angle-down"></i>
+                                                McKee Foods Corporation - Software Engineering Intern
+                                            
+                                            </div>
+                                                
+                                            <div class="collapsible-body white">
+
+                                                <p>
+                                                Design and build new business reports 
+                                                using SSMS and SSRS.
+                                                </p>
+
+                                                <br/>
+
+                                                <p>
+                                                Make layout adjustments on internal mobile 
+                                                business applications using SCSS and some 
+                                                AngularJS.
+                                                </p>
+
+                                            </div>
+
+                                        </li>
+                                    
+                                    </ul>
+
+                                </div>
+                            
+                            </div>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
-                <h3>Personal Projects</h3>
+                <div class="wrapper">
 
-                <div class="wrapper" id="project-wrapper">
+                <div class="card teal accent-2">
 
-                    <div class="projects">
-              
-                        <div class="projectTitle">
+                    <div class="card-content">
 
-                            <h3>Nameplate Android App</h3>
+                        <span class="card-title">Personal Projects</span>
 
-                        </div>
+                        <div class="row">
 
-                        <div class="imgContainer">
+                            <div class="col s12 m6 l4">
 
-                            <img src="img/index/dSign.png" alt="Screenshot of app">
+                                <div class="card">
 
-                        </div>
+                                    <div class="card-image">
 
-                        <div class="projectDescription">
+                                        <img src="img/index/dSign.png" alt="Screenshot of app">
+                                        
+                                    </div>
 
-                            <p>
-                            An app designed to replace traditional office
-                            nameplates with a dynamic interface. It is updatable
-                            via an accompanying mobile app for the office occupant's
-                            phone that syncs with the nameplate via Dropbox.
-                            </p>
+                                    <div class="card-content">
+                                        
+                                        <span class="card-title">Nameplate Android App</span>
+
+                                        <p>
+                                        An app designed to replace traditional office
+                                        nameplates with a dynamic interface. It is updatable
+                                        via an accompanying mobile app for the office occupant's
+                                        phone that syncs with the nameplate via Dropbox.
+                                        </p>
+                            
+                                    </div>
+
+                                    <div class="card-action">
+
+                                        <a href="https://github.com/roerjo/D-Sign-Tablet-App">Check It Out</a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col s12 m6 l4">
+
+                                <div class="card">
+
+                                    <div class="card-image">
+                                
+                                        <img src="img/index/todoApp.png">
+
+                                    </div>
+
+                                    <div class="card-content">
+                                        
+                                        <span class="card-title">Custom PHP MVC Framework: Todo App</span>
+
+                                        <p>
+                                        I wanted to build a simple framework modeled after
+                                        Laravel's so I could learn more about how it works.
+                                        </p>
+                    
+                                    </div>
+
+                                    <div class="card-action">
+
+                                        <a href="https://github.com/roerjo/custom-php-framework-todo-app">Check It Out</a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
                         
-                        </div>
+                            <div class="col s12 m6 l4">
 
-                        <div class="projectLink">
+                                <div class="card">
+                        
+                                    <div class="card-image">
 
-                            <a href="https://github.com/roerjo/D-Sign-Tablet-App" class="btn">Check It Out</a>
+                                        <img src="img/index/esscents.png">
+                                
+                                    </div>
 
+                                    <div class="card-content">
+                                        
+                                        <span class="card-title">E-Commerce Site Using Stripe</span>
+
+                                        <p>
+                                        An e-commerce website I built for a friend using Laravel. 
+                                        Payments were made using Stripe. A small admin area was 
+                                        also made to manage products.
+                                        </p>
+                  
+                                    </div>
+
+                                    <div class="card-action">
+
+                                        <a href="https://github.com/roerjo/esscents">Check It Out</a>
+
+                                    </div>
+
+                                </div>
+                        
+                            </div>
+                    
                         </div>
 
                     </div>
 
-                    <div class="projects">
+                </div>
 
-                        <div class="projectTitle">
-
-                            <h3>Custom PHP MVC Framework: Todo App</h3>
-
-                        </div>
-
-                        <div class="imgContainer">
-
-                            <img src="img/index/todoApp.png">
-
-                        </div>
-
-                        <div class="projectDescription">
-
-                            <p>
-                            I wanted to build a simple framework modeled after
-                            Laravel's so I could learn more about how it works.
-                            </p>
-                
-                        </div>
-
-                        <div class="projectLink">
-
-                            <a href="https://github.com/roerjo/custom-php-framework-todo-app" class="btn">Check It Out</a>
-
-                        </div>
-
-                    </div>
-                    
-                    <div class="projects">
-                    
-                        <div class="projectTitle">
-
-                            <h3>E-Commerce Site Using Stripe</h3>
-
-                        </div>
-
-                        <div class="imgContainer">
-
-                            <img src="img/index/esscents.png">
-
-                        </div>
-
-                        <div class="projectDescription">
-
-                            <p>
-                            An e-commerce website I built for a friend using Laravel. Payments were made using Stripe. A small admin area was also made to manage products.
-                            </p>
-              
-                        </div>
-
-                        <div class="projectLink">
-
-                            <a href="https://github.com/roerjo/esscents" class="btn">Check It Out</a>
-
-                        </div>
-
-                    </div>
-                    
                 </div>
 
             </div>
@@ -313,32 +482,48 @@
 
                 <div class="wrapper">
 
-                    <div class="splitHalf">
+                    <div class="row">
 
-                        <h3>Contact and History</h3>
+                        <div class="col s12 m6">
 
-                        <a href="https://drive.google.com/open?id=17swsS9TqZLYMOApGyRi2fjzTbS9b03tYRG1mBOO3oy0" class="btn" target="_blank">Resume</a>
+                            <div class="card yellow lighten-1">
 
-                        <a href="https://www.linkedin.com/in/robert-johnson-295254b2" class="btn" target="_blank">LinkedIn</a>
+                                <div class="card-content">
 
-                        <p>roerjo.personal@gmail.com</p>
+                                    <span class="card-title">Contact and History</span>
 
-                    </div>
+                                    <a href="https://drive.google.com/open?id=17swsS9TqZLYMOApGyRi2fjzTbS9b03tYRG1mBOO3oy0" class="btn deep-purple lighten-1" target="_blank">Resume</a>
 
-                    <div class="splitHalf">
+                                    <a href="https://www.linkedin.com/in/robert-johnson-295254b2" class="btn deep-purple lighten-1" target="_blank">LinkedIn</a>
 
-                        <h3>Coding and Tutorial Profiles</h3>
+                                    <p>roerjo.personal@gmail.com</p>
 
-                        <div class="codeLinks">
+                                </div>
 
-                            <a href="https://www.codecademy.com/roerjo" class="btn" target="_blank">Codecademy</a>
+                            </div>
 
-                            <a href="https://github.com/roerjo" class="btn" target="_blank">GitHub</a>
+                        </div>
 
-                            <a href="https://gitlab.com/roerjo" class="btn" target="_blank">GitLab</a>
+                        <div class="col s12 m6">
 
-                            <a href="https://www.freecodecamp.com/roerjo" class="btn" target="_blank">FreeCodeCamp</a>
-       
+                            <div class="card yellow lighten-1">
+
+                                <div class="card-content">
+
+                                    <span class="card-title">Coding and Tutorial Profiles</span>
+
+                                    <a href="https://www.codecademy.com/roerjo" class="btn deep-purple lighten-1" target="_blank">Codecademy</a>
+
+                                    <a href="https://github.com/roerjo" class="btn deep-purple lighten-1" target="_blank">GitHub</a>
+
+                                    <a href="https://gitlab.com/roerjo" class="btn deep-purple lighten-1" target="_blank">GitLab</a>
+
+                                    <a href="https://www.freecodecamp.com/roerjo" class="btn deep-purple lighten-1" target="_blank">FreeCodeCamp</a>
+           
+                                </div>
+
+                            </div>
+
                         </div>
 
                     </div>
@@ -358,6 +543,8 @@
           </div>
 
         </footer>
+
+        <script src="js/main.js"></script>
 
     </body>
 
