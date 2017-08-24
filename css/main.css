@@ -24,6 +24,10 @@ h1, h2 {
 
 /*---------- Header/Nav ----------*/
 
+nav {
+  position: fixed;
+  z-index: 1000;
+}
 
 @media screen and (max-width: 452px) {
   nav .brand-logo {
@@ -36,7 +40,7 @@ h1, h2 {
 
 
 .intro {
-  padding-top: 10px;
+  padding-top: 85px;
 }
 
 .intro .container {
@@ -228,6 +232,15 @@ text h3 {
   width: 100%;
 }
 
+.work .card a {
+  text-decoration: none;
+  color: #000;
+}
+
+.work .card a:hover .card-title {
+  text-decoration: underline;
+}
+
 .work .btn {
   background-color: #FAB31E;
   color: #fff;
@@ -293,6 +306,7 @@ text h3 {
 }
 
 .moreAbout .btn {
+  color: #9575cd;
   margin: 5px 0;
 }
 
