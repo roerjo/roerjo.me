@@ -20,6 +20,17 @@ h1, h2 {
   text-transform: uppercase;
 }
 
+.btn {
+  color: #9575cd;
+  margin: 5px auto;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 6px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
 
 
 /*---------- Header/Nav ----------*/
@@ -203,6 +214,13 @@ text h3 {
   width: 100%;
 }
 
+.work .btn {
+ display: block;
+ width: 50%;
+ background-color: #3C6478;
+ color: white;
+}
+
 .work h3 {
   font-size: 100%;
   font-weight: 700;
@@ -241,20 +259,12 @@ text h3 {
   text-decoration: underline;
 }
 
-.work .btn {
-  background-color: #FAB31E;
-  color: #fff;
-  padding: 8px 15px;
-  border-radius: 3px;
-  text-decoration: none;
-}
-
 .work .imgContainer {
   height: 150px;
   width: 100%;
 }
 
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 1350px) {
   .work .wrapper {
     flex-wrap: wrap;
     justify-content: space-around; 
@@ -264,7 +274,7 @@ text h3 {
     width: 43%;
     min-width: 265px;
     margin: 10px; 
-    } 
+  } 
 }
 
 @media only screen and (max-width: 460px) {
@@ -303,15 +313,6 @@ text h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.moreAbout .btn {
-  color: #9575cd;
-  margin: 5px 0;
-}
-
-.moreAbout .btn:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media only screen and (max-width: 768px) {
