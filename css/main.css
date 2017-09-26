@@ -22,6 +22,7 @@ h1, h2 {
 
 .btn {
   color: #9575cd;
+  min-width: 95px;
   margin: 5px auto;
   white-space: nowrap;
 }
