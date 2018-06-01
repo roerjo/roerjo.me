@@ -1,13 +1,13 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto Slab'; 
+  font-family: 'Roboto Slab';
   background-color: #FFF;
 }
 
 .container {
   max-width: 980px;
-  margin: 0 auto; 
+  margin: 0 auto;
   height: 100%;
 }
 
@@ -93,11 +93,11 @@ nav {
   .intro .wrapper {
     flex-wrap: wrap-reverse;
     justify-content: center;
-    max-height: 100%; 
+    max-height: 100%;
   }
 
   .intro .text {
-    width: 100%; 
+    width: 100%;
   }
 
   .intro .image-wrap {
@@ -107,12 +107,12 @@ nav {
   .intro img {
     width: 250px;
     height: 250px;
-  } 
+  }
 }
 
 
 /*---------- Looking For/Skills ----------*/
-   
+
 
 .tech .container {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -156,11 +156,11 @@ text h3 {
   .tech .wrapper {
     flex-wrap: wrap-reverse;
     justify-content: center;
-    max-height: 100%; 
+    max-height: 100%;
   }
 
   .tech .text {
-    width: 100%; 
+    width: 100%;
   }
 
   .tech .image-wrap {
@@ -171,7 +171,7 @@ text h3 {
     width: 250px;
     height: 250px;
     margin-bottom: 20px;
-  } 
+  }
 }
 
 
@@ -183,110 +183,20 @@ text h3 {
 }
 
 .work h2 {
-
   margin: 0;
   margin-top: 20px;
   font-size: 36px;
   padding-top: 20px;
 }
 
-
-.work #project-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
-.projects {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  min-width: 265px;
-  color: #fff;
-  background-color: #1E2C51;
-  text-align: center;
-  overflow: auto;
-  border: 5px solid #1E2C51;
-  border-radius: 5px;
-  height: 400px; 
-}
-
-.projectTitle {
-  height: 60px;
-  width: 100%;
+.work .workcard {
+  min-height: 550px;
 }
 
 .work .btn {
  display: block;
- width: 50%;
  background-color: #3C6478;
  color: white;
-}
-
-.work h3 {
-  font-size: 100%;
-  font-weight: 700;
-  bottom: 50%;
-}
-
-.projectDescription {
-  height: 125px;
-  width: 100%;
-}
-
-.projectLink {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80px;
-  width: 100%;
-}
-
-.projects a {
-  display: inline;
-}
-
-.work img {
-  object-fit: contain;
-  height: 100%;
-  width: 100%;
-}
-
-.work .card a {
-  text-decoration: none;
-  color: #000;
-}
-
-.work .card a:hover .card-title {
-  text-decoration: underline;
-}
-
-.work .imgContainer {
-  height: 150px;
-  width: 100%;
-}
-
-@media only screen and (max-width: 1350px) {
-  .work .wrapper {
-    flex-wrap: wrap;
-    justify-content: space-around; 
-  }
-
-  .work .projects {
-    width: 43%;
-    min-width: 265px;
-    margin: 10px; 
-  } 
-}
-
-@media only screen and (max-width: 460px) {
-  .work .wrapper {
-    flex-wrap: wrap;
-    justify-content: space-around; 
-  }
-  .work .projects {
-    width: 70%;
-    margin: 10px; 
-    } 
 }
 
 
@@ -307,7 +217,7 @@ text h3 {
 
 .moreAbout .wrapper {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
 .moreAbout .codeLinks {
@@ -318,11 +228,11 @@ text h3 {
 
 @media only screen and (max-width: 768px) {
   .moreAbout h2 {
-    margin: 30px 0 10px 0; 
+    margin: 30px 0 10px 0;
   }
 
   .moreAbout .wrapper {
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
   }
 }
 
@@ -336,7 +246,5 @@ text h3 {
   padding-bottom: 10px;
   padding-left: 15px;
   color: white;
-  overflow: auto; 
+  overflow: auto;
 }
-
-
