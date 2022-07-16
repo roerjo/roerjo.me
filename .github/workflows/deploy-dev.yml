@@ -1,4 +1,4 @@
-name: Deploy to dev bucket
+name: Deploy to dev
 
 on:
   push:
