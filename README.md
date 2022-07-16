@@ -1,5 +1,5 @@
 [![Deploy to prod](https://github.com/roerjo/roerjo.me/actions/workflows/deploy-prod.yml/badge.svg?branch=master)](https://github.com/roerjo/roerjo.me/actions/workflows/deploy-prod.yml) [![Deploy to dev](https://github.com/roerjo/roerjo.me/actions/workflows/deploy-dev.yml/badge.svg?branch=develop)](https://github.com/roerjo/roerjo.me/actions/workflows/deploy-dev.yml)
-# roerjo.me
+# [roerjo.me](https://roerjo.me)
 My personal site
 
 # How I setup the auto-deployment to AWS S3
