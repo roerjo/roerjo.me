@@ -1,6 +1,4 @@
-[![Deploy to prod bucket](https://github.com/roerjo/roerjo.me/actions/workflows/deploy-prod.yml/badge.svg?branch=master)](https://github.com/roerjo/roerjo.me/actions/workflows/deploy-prod.yml)
-
-[![Deploy to dev bucket](https://github.com/roerjo/roerjo.me/actions/workflows/deploy-dev.yml/badge.svg?branch=develop)](https://github.com/roerjo/roerjo.me/actions/workflows/deploy-dev.yml)
+[![Deploy to prod bucket](https://github.com/roerjo/roerjo.me/actions/workflows/deploy-prod.yml/badge.svg?branch=master)](https://github.com/roerjo/roerjo.me/actions/workflows/deploy-prod.yml) [![Deploy to dev bucket](https://github.com/roerjo/roerjo.me/actions/workflows/deploy-dev.yml/badge.svg?branch=develop)](https://github.com/roerjo/roerjo.me/actions/workflows/deploy-dev.yml)
 # roerjo.me
 My personal site
 
