@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  deploy:
+  Deploy to prod bucket:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -20,4 +20,4 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Deploy site to prod S3 bucket
-        run: aws s3 sync ./public/ s3://roerjo.me
+        run: aws s3 sync ./public/ s3://roerjo.me --delete
